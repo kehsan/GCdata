@@ -1,0 +1,14 @@
+run_analysis.R merges six data sets (a pair of test and train, defined in the cookbook.pdf) into one. The data is assumed to be on the same direcoty as the R file. But not included in GITHUB.
+
+
+The script then merges the six data sets into one data set, by rbind and cbind, and then subsets into a data set made of subjects, activities, and columns of mean and standard deviation which are constructed by running grep command to search for text: "mean()" or "std()".
+
+
+A resultant data set made of 68 variables is avchieved. The first two columns are the
+subjects and their activities and the remainig 66 columns created are the result of grep search.
+
+
+An aggregate command is then run to find the new mean for each subject and their activities, by grouping them as such.
+
+The final data frame is a tidy data set made of 180 rows and 68 columns and written into
+table and saved as tidy.txt 
