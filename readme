@@ -1,4 +1,4 @@
-run_analysis.R merges six data sets (a pair of test and train, defined in the cookbook.pdf) into one. The data is assumed to be on the same direcoty as the R file. But not included in GITHUB.
+run_analysis.R merges six data sets (a pair of test and train, defined in the codebook.pdf) into one. The data is assumed to be on the same direcoty as the R file. But not included in GITHUB.
 
 
 The script then merges the six data sets into one data set, by rbind and cbind, and then subsets into a data set made of subjects, activities, and columns of mean and standard deviation which are constructed by running grep command to search for text: "mean()" or "std()".
